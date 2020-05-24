@@ -1,13 +1,8 @@
 import React from 'react';
-import s from './App.module.css';
-import Header from './Components/Header/Header';
-import Main from './Components/Main/Main';
-import Skills from './Components/Skills/Skills';
-import Projects from './Components/Projects/Projects';
-import Slogan from './Components/Slogan/Slogan';
-import Contacts from './Components/Contacts/Contacts';
-import Footer from './Components/Footer/Footer';
-import Particles from 'react-particles-js';
+import './App.module.css';
+import {Route} from "react-router-dom";
+import MainContainer from "./Components/MainContainer/MainContainer";
+import SentMessagePage from "./Components/SentMessagePage/SentMessagePage";
 
 const particlesOpt = {
     "particles": {
@@ -25,14 +20,8 @@ function App() {
 
     return (
         <div className="App">
-            <Particles className={s.particles} params={particlesOpt}/>
-            <Header/>
-            <Main/>
-            <Skills/>
-            <Projects/>
-            <Slogan/>
-            <Contacts/>
-            <Footer/>
+            <Route exact path="/" render={() => <MainContainer particlesOpt={particlesOpt}/>}/>
+            <Route path="/sentMessage" render={() => <SentMessagePage/>}/>
         </div>
     );
 }
