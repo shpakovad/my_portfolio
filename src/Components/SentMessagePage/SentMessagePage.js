@@ -12,7 +12,7 @@ function SentMessagePage() {
 
     return (<>
         <div className={s.wrapper}>
-            <div>Thanks for you message! </div>
+            <div>Thanks for your message! </div>
                 <div>  I'll contact you as soon as possible!</div>
             <button onClick={bakOnMain}>Back to main Page</button>
         </div>
