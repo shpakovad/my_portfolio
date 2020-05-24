@@ -13,7 +13,7 @@ function WrapperContacts() {
     const onSentMessage=(e)=>{
         e.preventDefault()
        console.log(name,email,message)
-        axios.post("http://localhost:3010/sendMessage",
+        axios.post("https://smtp-gmail-server-portfolio.herokuapp.com/sendMessage",
             {
                 name:name,
                 email:email,
