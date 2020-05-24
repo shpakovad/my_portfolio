@@ -1,0 +1,252 @@
+.main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 100px 0;
+    position: relative
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.greeting span:nth-child(1) {
+    font-size: 16px;
+}
+
+.greeting span:nth-child(2),
+.greeting span:nth-child(2) span {
+    font-stretch: normal;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    position: relative;
+}
+
+h1 {
+    font-size: 27px;
+}
+
+.greeting span:nth-child(2) span:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    background-color: #ea548d;
+    bottom: 0;
+    z-index: -1;
+}
+
+.greeting span:nth-child(2) span {
+    z-index: 0;
+}
+
+.photo {
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+    transition: 500ms;
+}
+
+.image {
+    height: 400px;
+    width: 300px;
+    background-image: url(../../assets/img/photo.jpg);
+}
+
+.photo:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.photo .image:before {
+    content: "";
+    position: absolute;
+    height: 430px;
+    width: 300px;
+    border: 5px solid #ea548d;
+    left: 15px;
+    top: -20px;
+    z-index: -1;
+}
+
+@media screen and (max-width: 595px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .photo {
+        height: 360px;
+        width: 270px;
+    }
+
+    .greeting span:nth-child(2),
+    .greeting span:nth-child(2) span {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .image {
+        height: 288px;
+        width: 210px;
+    }
+
+    .photo .image:before {
+        height: 310px;
+        width: 210px;
+    }
+
+    .greeting span:nth-child(1) {
+        font-size: 14px;
+        padding-top: 40px;
+    }
+
+    .greeting span:nth-child(2),
+    .greeting span:nth-child(2) span {
+        font-size: 28px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 262px) and (max-width: 385px) {
+    .greeting span:nth-child(2),
+    .greeting span:nth-child(2) span {
+        font-size: 20px;
+    }
+
+    .photo .image:before {
+        margin-left: 10px;
+    }
+
+    .image {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (min-width: 415px) and (max-width: 595px) {
+    .greeting span:nth-child(2),
+    .greeting span:nth-child(2) span {
+        font-size: 20px;
+    }
+
+    .image {
+        height: 340px;
+        width: 255px;
+    }
+
+    .photo .image:before {
+        height: 366px;
+        width: 255px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .greeting span:nth-child(1) {
+        font-size: 10px;
+    }
+
+    .greeting span:nth-child(2) span:before {
+        height: 9px;
+    }
+}
+
+@media screen and (max-width: 596px) {
+    .greeting span:nth-child(2),
+    .greeting span:nth-child(2) span {
+        font-size: 30px;
+    }
+
+    .image {
+        height: 360px;
+        width: 270px;
+    }
+
+    .photo .image:before {
+        height: 387px;
+        width: 270px;
+    }
+}
+
+@media screen and (min-width: 596px) and (max-width: 728px) {
+    .greeting span:nth-child(2) span:before {
+        background-color: black;
+    }
+
+    h1 {
+        font-size: 17px;
+    }
+
+    .greeting span:nth-child(2),
+    .greeting span:nth-child(2) span {
+        font-size: 25px;
+    }
+}
+
+@media screen  and (max-width: 320px) {
+    .image {
+        height: 275px;
+        width: 204px;
+    }
+
+    .photo .image:before {
+        height: 293px;
+        width: 204px;
+    }
+
+    .greeting span:nth-child(2) span:before {
+        background-color: black;
+    }
+
+    .greeting span:nth-child(2),
+    .greeting span:nth-child(2) span {
+        font-size: 20px;
+    }
+
+    .greeting span:nth-child(1) {
+        font-size: 8px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        height: 80vh;
+        padding-top: 130px;
+
+    }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
+    .main {
+        height: 50vh;
+    }
+
+    .greeting span:nth-child(2),
+    .greeting span:nth-child(2) span {
+        font-size: 30px;
+    }
+
+    .greeting span:nth-child(2) span:before {
+        height: 15px;
+    }
+}

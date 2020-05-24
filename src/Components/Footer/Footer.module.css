@@ -1,0 +1,103 @@
+.footer {
+    height: 300px;
+    background-color: #2C2A2A;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0 30px;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.socialIcon {
+    width: 60px;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    transition: 500ms;
+}
+
+.socialIcon:hover {
+    border: 1px solid white;
+    transition: 0.2s ease-in-out 0s;
+}
+
+.socialIcon img:hover {
+    width: 100%;
+}
+
+.socialIcon img {
+    width: 80%;
+    border-radius: 50%;
+}
+
+.socialIcon a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titleMain {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+
+.rights {
+    padding-top: 60px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    letter-spacing: 5px;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-size: 8px;
+}
+
+.line {
+    height: 2px;
+    width: 55px;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    background-color: #ea548d;
+
+}
+
+@media screen and (max-width: 626px) {
+    .social {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .socialIcon {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .socialIcon {
+        width: 45px;
+        height: 45px;
+    }
+}

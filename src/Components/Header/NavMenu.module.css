@@ -1,0 +1,30 @@
+.navMenu {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navMenu a {
+    color: white;
+    font-weight: bold;
+    display: block;
+}
+
+.navMenu a:hover {
+    color: #ea548d;
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+.wrapperLink {
+    box-sizing: border-box;
+    width: auto;
+    height: 30px;
+}
+
+@media screen and (max-width: 308px) {
+    .navMenu a {
+        padding: 0 3px;
+        font-weight: normal;
+    }
+}
